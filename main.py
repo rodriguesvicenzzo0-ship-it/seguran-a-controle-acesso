@@ -32,3 +32,28 @@ print(estoque)
 
 print("\n=== RECURSOS EM OPERAÇÃO ===")
 print(recursos)
+
+tarefas = [
+    [0, 1],
+    [1, 0]
+]
+
+pendentes = 0
+concluidas = 0
+
+print("Matriz de tarefas:")
+
+for i in range(2):
+    for j in range(2):
+        print(tarefas[i][j], end=" ")
+
+        if tarefas[i][j] == 0:
+            pendentes += 1
+        else:
+            concluidas += 1
+
+    print()
+
+print("Pendentes:", pendentes)
+print("Concluídas:", concluidas)
+
